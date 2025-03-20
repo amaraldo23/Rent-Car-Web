@@ -1,0 +1,122 @@
+
+.car-details-page {
+    font-family: Arial, sans-serif;
+    background-color: rgb(0 0 0 / 70%);
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.car-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.car-image-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.car-image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.car-karakter-section h2 {    text-align: center;
+    margin-top: 20px;
+    background-color: #000000; /* Ngjyra e sfondit të kutisë */
+    border: 2px solid #00e226; /* Kufiri i kutisë */
+    border-radius: 40px; /* Rrumbullakosja e qosheve */
+    padding: 15px; /* Hapësira brenda kutisë */
+    margin: 10px 0; /* Hapësira jashtë kutisë */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hije për efekt vizual */
+    max-width: 50%; /* Gjerësia maksimale e kutisë */
+    width: 100%; /* Gjerësia e kutisë */
+}
+
+
+.car-details-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.detail-item {
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: #000000; /* Ngjyra e sfondit të kutisë */
+    border: 2px solid #00e226; /* Kufiri i kutisë */
+    border-radius: 40px; /* Rrumbullakosja e qosheve */
+    padding: 15px; /* Hapësira brenda kutisë */
+    margin: 10px 0; /* Hapësira jashtë kutisë */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hije për efekt vizual */
+    max-width: 50%; /* Gjerësia maksimale e kutisë */
+    width: 100%; /* Gjerësia e kutisë */
+}
+
+.detail-item strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.features-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features-list li {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.reservation-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.date-picker {
+    margin-bottom: 15px;
+}
+
+.date-picker label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.rent-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.rent-button:hover {
+    background-color: #0056b3;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #218838;
+}
+
+.car-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
