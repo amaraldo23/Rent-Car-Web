@@ -1,18 +1,28 @@
 // src/pages/CarDetails.jsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom'; // Përdor useParams dhe Link për navigim
-import DatePicker from 'react-datepicker'; // Përdor DatePicker për kalendarin
-import 'react-datepicker/dist/react-datepicker.css'; // Stilizimi i DatePicker
 import './CarDetails.css'; // Importi stilizimit ne css
 import car1 from "../../assets/car1.png";
 import car2 from "../../assets/car2.png";
 import car3 from "../../assets/car3.png";
 import car4 from "../../assets/car4.png";
 
+import dayjs from 'dayjs';
+import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { TimePicker } from '@mui/x-date-pickers/TimePicker';
+
+
+import {Box,Grid} from '@mui/material/';
+
 const CarDetails = () => {
   const { id } = useParams(); // Merr ID-në e makinës nga URL
   const [startDate, setStartDate] = useState(new Date()); // Data e fillimit
   const [endDate, setEndDate] = useState(new Date()); // Data e mbarimit
+
+  const [value, setValue] = useState(dayjs('2022-04-17'));
 
   // Lista e makinave (mund të zëvendësohet me një API call në të ardhmen)
   const cars = [
@@ -75,34 +85,55 @@ const CarDetails = () => {
         <img src={car.image} alt={car.model} />
       </section>
 
-      {/* Seksioni i Detajeve */}
-      <section className="car-details-section">
-          <div className="detail-item">
-          <h2>Detajet e Makinës</h2>
-            <p>Kilometrat: 255</p>
-            <p>Lëndë djegëse:</p>
+      <section>
+        {/* Seksioni i Detajeve */}
+        <div className="car-details-section">
+            <div className="detail-item">
+              <h2>Detajet e Makinës</h2>
+                <p>Kilometrat: 255</p>
+                <p>Lëndë djegëse:</p>
+            </div>
         </div>
-        <div className='car-karakter-section'>
-        <h2>Karakteristikat</h2>  
-        <ul className="features-list"></ul>
-        </div>
-      </section>
 
       {/* Seksioni i Rezervimit */}
-      <section className="reservation-section">
-        <h2>Rezervo Tani</h2>
-        <div className="date-picker">
-          <label>Data e Fillimit:</label>
-          <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
-        </div>
-        <div className="date-picker">
-          <label>Data e Mbarimit:</label>
-          <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} />
-        </div>
-        <div>
-          <button className="rent-button">Rezervo</button>
-        </div>
-        <Link to="/" className="back-button">Kthehu në Faqen Kryesore</Link>
+          <div className="reservation-section">
+            <h2>Rezervo Tani</h2>
+
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+                <DemoContainer components={['DatePicker', 'DatePicker','TimePicker']}>
+                <Grid container>
+                    <Grid size={8}>
+                    <DatePicker
+                        className='pick-car-date'
+                        label="Controlled picker"
+                        value={value}
+                        onChange={(newValue) => setValue(newValue)}
+                        defaultValue={dayjs('2022-04-17')}
+                      />
+                    </Grid>
+                    <Grid size={4}>
+                        <TimePicker label="Basic time picker"  className='pick-car-time'/>
+                    </Grid>
+                  </Grid>
+                  <Grid container>
+                    <Grid size={8}>
+                    <DatePicker
+                        className='pick-car-date'
+                        label="Controlled picker"
+                        value={value}
+                        onChange={(newValue) => setValue(newValue)}
+                        defaultValue={dayjs('2022-04-17')}
+                      />
+                    </Grid>
+                    <Grid size={4}>
+                        <TimePicker label="Basic time picker"  className='pick-car-time'/>
+                    </Grid>
+                  </Grid>
+                </DemoContainer>
+              </LocalizationProvider>
+
+            <Link to="/" className="back-button">Kthehu në Faqen Kryesore</Link>
+          </div>
       </section>
 
       {/* Footer */}
