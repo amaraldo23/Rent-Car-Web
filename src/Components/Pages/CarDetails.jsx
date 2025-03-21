@@ -88,17 +88,16 @@ const CarDetails = () => {
       <section>
         {/* Seksioni i Detajeve */}
         <div className="car-details-section">
-            <div className="detail-item">
-              <h2>Detajet e Makinës</h2>
-                <p>Kilometrat: 255</p>
-                <p>Lëndë djegëse:</p>
-            </div>
+          <h2>Detajet e Makinës</h2>
+              <div className="detail-item">
+                <p>Kilometrat:150 mije te kontralluara</p>
+                <p>Lëndë djegëse: Nafte </p>
+              </div>
         </div>
 
       {/* Seksioni i Rezervimit */}
           <div className="reservation-section">
             <h2>Rezervo Tani</h2>
-
             <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DemoContainer components={['DatePicker', 'DatePicker','TimePicker']}>
                 <Grid container>
@@ -131,17 +130,16 @@ const CarDetails = () => {
                   </Grid>
                 </DemoContainer>
               </LocalizationProvider>
-
-            <Link to="/" className="back-button">Kthehu në Faqen Kryesore</Link>
+              <button className='rent-button'> Rezevo tani</button>
           </div>
       </section>
-
-      {/* Footer */}
+      <div className='back-button'>
+      <Link to="/"><button className='buttons'>Kthehu në Faqen Kryesore</button></Link>
+      </div>
       <footer className="car-footer">
         <p>© 2025 Rent-a-Car. Të gjitha të drejtat e rezervuara.</p>
       </footer>
     </div>
-    
   );
 };
 

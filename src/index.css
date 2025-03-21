@@ -52,7 +52,6 @@ body, html {
   min-height: 100vh; /* Siguron që .app të zërë të paktën lartësinë e dritares */
 }
 
-
 *{
   box-sizing: border-box; /* Siguron që padding dhe border të përfshihen në madhësinë e elementit */
   font-size: 50px;
@@ -148,20 +147,5 @@ body {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-}
-
-.rent-button {
-  padding: 10px 20px;
-  background-color: #28a745; /* Ngjyrë jeshile */
-  color: #fff;
-  margin-block: 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.rent-button:hover {
-  background-color: #218838; /* Ngjyrë jeshile më e errët */
 }
 
