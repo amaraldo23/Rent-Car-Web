@@ -102,12 +102,6 @@ body {
   }
 }
 
-/* src/index.css */
-.car-item img {
-  max-width: 100%;
-  height: auto;
-  display: block; /* Siguron që imazhi të mos ketë hapësirë të panevojshme */
-}
 
 /* src/index.css */
 .details-button {
@@ -124,28 +118,3 @@ body {
 .details-button:hover {
   background-color: #28a745; /* Ngjyrë blu më e errët kur kaloni mbi butonin */
 }
-
-/* src/index.css */
-.car-details {
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.car-details img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.date-picker {
-  margin: 20px 0;
-}
-
-.date-picker label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
