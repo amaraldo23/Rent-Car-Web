@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-route
 import Background from "./Components/Background/Background";
 import Navbar from "./Components/Navbar/Navbar";
 import About from './Components/Pages/About';
+import Contact from './Components/Pages/Contact';
 import Hero from "./Components/Hero/Hero";
 import Home from "./Components/Pages/Home";
 import CarDetails from "./Components/Pages/CarDetails";
@@ -29,10 +30,14 @@ const App = () => {
         navigate('/about');
     };
 
+    const handleNavigateToContact = () => {
+            navigate('/contact');
+    };
+    
     return (
         <div>
             <Background playStatus={playStatus} heroCount={heroCount} />
-            <Navbar onAboutClick={handleNavigateToAbout} />
+            <Navbar onAboutClick={handleNavigateToAbout} onContactClick={handleNavigateToContact} />
             <Hero
                 setPlayStatus={setPlayStatus}
                 heroData={heroData[heroCount]}
@@ -43,6 +48,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
                 <Route path="/car/:id" element={<CarDetails />} />
             </Routes>
         </div>
