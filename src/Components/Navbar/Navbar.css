@@ -31,13 +31,11 @@ nav {
 }
 
 /* Stilizime specifike për secilin element */
-.menu li.Home a {
+.menu li.Home{
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     font-weight: bold;
     border-radius: 40px;
-    padding: 8px 40px;
-    transition: background-color 0.3s ease;
 }
 
 .menu li.About {
@@ -49,6 +47,7 @@ nav {
 
 .menu li.Contact {
     background-color: #ffffff;
-    border-radius: 40px;
+    color: rgb(0, 0, 0);
     font-weight: bold;
+    border-radius: 40px;
 }

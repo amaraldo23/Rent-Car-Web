@@ -25,11 +25,19 @@ const App = () => {
 
         return () => clearInterval(interval); // Pastron intervalin kur komponenti unmount
     }, []);
+
+    const handleNavigateToAbout = () => {
+        navigate('/about');
+    };
+
+    const handleNavigateToContact = () => {
+            navigate('/contact');
+    };
     
     return (
         <div>
             <Background playStatus={playStatus} heroCount={heroCount} />
-            <Navbar/>
+            <Navbar onAboutClick={handleNavigateToAbout} onContactClick={handleNavigateToContact} />
             <Hero
                 setPlayStatus={setPlayStatus}
                 heroData={heroData[heroCount]}
