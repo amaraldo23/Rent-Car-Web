@@ -19,16 +19,15 @@ nav {
 
 .menu li a, .menu li button {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     background: none;
-    border: none;
     cursor: pointer;
     padding: 20px 40px;
     transition: color 0.3s ease;
 }
 
 .menu li a:hover, .menu li button:hover {
-    color: #007bff;
+    color: #28a745;
 }
 
 /* Stilizime specifike për secilin element */
@@ -41,18 +40,15 @@ nav {
     transition: background-color 0.3s ease;
 }
 
-.menu li.About button {
+.menu li.About {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     font-weight: bold;
     border-radius: 40px;
-    padding: 8px 40px;
 }
 
-.menu li.Contact button {
+.menu li.Contact {
     background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
     border-radius: 40px;
-    padding: 8px 40px;
+    font-weight: bold;
 }
