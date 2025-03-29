@@ -45,7 +45,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <h2>Lista e Makinave</h2>
+      <h2>Top 4 most rented Cars</h2>
       <CarList cars={cars} />
     </div>
   );
