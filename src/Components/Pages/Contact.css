@@ -1,0 +1,30 @@
+.contact-container{
+
+    max-width: auto;
+}
+
+.contact-info{
+    margin: auto;
+    background-color: #000000;
+    border-radius: 25px;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-title{
+    text-align: center;
+    font-size: 80px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.contact-card {
+    background-color: #000000;
+    border-radius: 25px;
+    padding: 20px;
+    width: 33%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
