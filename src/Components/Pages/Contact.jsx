@@ -39,8 +39,11 @@ function Contact() {
                     </div>
                 </div>
             </div>
+
+            <div className="car-footer">
+                <p>© 2025 Rent-a-Car. Të gjitha të drejtat e rezervuara.</p>
+            </div>
         </section>
-        
     );
 }
 
