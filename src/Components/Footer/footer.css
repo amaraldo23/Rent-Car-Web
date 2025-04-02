@@ -1,0 +1,36 @@
+.footer{
+    background-color: #1A1A1A;
+    padding: 0;
+    display: flex;
+}
+
+.footer-card{
+    margin-left: 30%;
+    display: flex;
+}
+
+.footer-table{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-tabel{
+    padding: 10% 25%;
+}
+
+.second-tabel{
+    padding: 10% 25%;
+}
+
+.triple-tabel{
+    padding: 10% 25%;
+}
+
+.button-table{ 
+    text-decoration: none;
+}
+
+.appleicone{
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+}

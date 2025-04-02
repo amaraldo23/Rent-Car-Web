@@ -2,7 +2,6 @@
 .contact-container {
     background-color: rgb(0 0 0 / 70%);
     width: 100%;
-    min-height: 100vh;
     color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -67,7 +66,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1.5rem;
+    margin: 20px auto 20px;
 }
 
 .card-icon svg {
@@ -77,7 +76,7 @@
 }
 
 .card-title {
-    font-size: 70px;
+    font-size: 40px;
     text-align: center;
     color: #ffffff;
     font-weight: 600;
@@ -91,6 +90,7 @@
 
 .card-content a {
     color: #dddddd;
+    font-size: 30px !important;
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s ease;

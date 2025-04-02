@@ -2,12 +2,13 @@ import React from 'react';
 import './Contact.css';
 
 function Contact() {
+    
     return (
         <section className="contact-container">
             <div className="contact-header">
                 <h1 className="contact-title">Contact Us</h1>
                 <p className="contact-info">
-                    West Park Rental offers affordable car rental in Albania. Get reliable and safe vehicles with complimentary insurance and 24/7 assistance. Contact us now to book a car or get more information about our services.
+                    Rental offers affordable car rental in Albania. Get reliable and safe vehicles with complimentary insurance and 24/7 assistance. Contact us now to book a car or get more information about our services.
                 </p>
             </div>
             
@@ -39,7 +40,6 @@ function Contact() {
                     </div>
                 </div>
             </div>
-
             <div className="car-footer">
                 <p>© 2025 Rent-a-Car. Të gjitha të drejtat e rezervuara.</p>
             </div>
