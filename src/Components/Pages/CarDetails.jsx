@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom'; // Përdor useParams dhe Link për navigim
 import './CarDetails.css'; // Importi stilizimit ne css
+import Footer from '../Footer/footer';
 import car1 from "../../assets/car1.png";
 import car2 from "../../assets/car2.png";
 import car3 from "../../assets/car3.png";
@@ -136,10 +137,10 @@ const CarDetails = () => {
       <div className='back-button'>
       <Link to="/"><button className='buttons'>Kthehu në Faqen Kryesore</button></Link>
       </div>
-      <footer className="car-footer">
-        <p>© 2025 Rent-a-Car. Të gjitha të drejtat e rezervuara.</p>
-      </footer>
+      <Footer/>
     </div>
+
+    
   );
 };
 

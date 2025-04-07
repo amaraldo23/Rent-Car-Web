@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contact.css';
+import Footer from '../Footer/footer';
 
 function Contact() {
     
@@ -40,10 +41,11 @@ function Contact() {
                     </div>
                 </div>
             </div>
-            <div className="car-footer">
-                <p>© 2025 Rent-a-Car. Të gjitha të drejtat e rezervuara.</p>
+            <div>
+            <Footer/>
             </div>
         </section>
+            
     );
 }
 

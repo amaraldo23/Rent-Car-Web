@@ -1,6 +1,7 @@
 // src/pages/Home.jsx
 import React from 'react';
 import CarList from '../Carlist/CarList';
+import Footer from '../Footer/footer';
 import car1 from "../../assets/car1.png";
 import car2 from "../../assets/car2.png";
 import car3 from "../../assets/car3.png";
@@ -47,8 +48,11 @@ const Home = () => {
     <div className="home">
       <h2>Top 4 most rented Cars</h2>
       <CarList cars={cars} />
-    </div>
+      </div>
   );
 };
+
+
+<Footer/>
 
 export default Home;

@@ -1,11 +1,13 @@
 .footer{
-    background-color: #1A1A1A;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 0;
     display: flex;
 }
 
 .footer-card{
-    margin-left: 30%;
+    margin-left: 25%;
     display: flex;
 }
 
@@ -15,15 +17,15 @@
 }
 
 .first-tabel{
-    padding: 10% 25%;
+    padding: 0% 25%;
 }
 
 .second-tabel{
-    padding: 10% 25%;
+    padding: 0% 25%;
 }
 
 .triple-tabel{
-    padding: 10% 25%;
+    padding:  0% 25%;
 }
 
 .button-table{ 
