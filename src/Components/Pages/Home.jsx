@@ -7,6 +7,12 @@ import car2 from "../../assets/car2.png";
 import car3 from "../../assets/car3.png";
 import car4 from "../../assets/car4.png";
 
+import category1 from "../../assets/veture.png";
+import category2 from "../../assets/fuoristrade.png";
+import category3 from "../../assets/sportive.png";
+import category4 from "../../assets/familjare.png";
+import CategoryList from "../Pages/CategoryList";
+
 const Home = () => {
   const cars = [
     {
@@ -44,10 +50,40 @@ const Home = () => {
     // Shtoni më shumë makina sipas nevojës
   ];
 
+  const categories = [
+    {
+      id: 1,
+      name: "Elektrike",
+      description: "Makina elektrike e vecant per zgjedhjen qe do.",
+      image: category1,
+    },
+    {
+      id: 2,
+      name: "Fuoristradë",
+      description: "Për udhëtime të vështira dhe terrene malore.",
+      image: category2,
+    },
+    {
+      id: 3,
+      name: "Sportive",
+      description: "Shpejtësi dhe stil për adhuruesit e makinave.",
+      image: category3,
+    },
+    {
+      id: 4,
+      name: "Familjare",
+      description: "Komoditet dhe hapësirë për të gjithë familjen.",
+      image: category4,
+    },
+  ];
+
   return (
-    <div className="home">
+    <div className="home-title">
       <h2>Top 4 most rented Cars</h2>
       <CarList cars={cars} />
+
+      <h2 style={{ marginTop: '40px' }}>Kategoritë e Makinave</h2>
+      <CategoryList categories={categories} />
       </div>
   );
 };
