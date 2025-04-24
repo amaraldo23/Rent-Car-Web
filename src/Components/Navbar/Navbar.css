@@ -27,27 +27,17 @@ nav {
 }
 
 .menu li a:hover, .menu li button:hover {
-    color: #28a745;
+    color: #ff5858;
 }
 
-/* Stilizime specifike për secilin element */
-.menu li.Home{
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    border-radius: 40px;
+.menu > li{
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    padding: 10px;
 }
 
-.menu li.About {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    border-radius: 40px;
+.menu > li > a{
+    color: #ffff;
 }
 
-.menu li.Contact {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    border-radius: 40px;
-}

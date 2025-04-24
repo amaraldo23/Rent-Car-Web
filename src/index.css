@@ -82,7 +82,7 @@ body, html {
 
 .car-item img {
   max-width: 100%;
-  height: auto; /* Siguron që imazhet të mos shtrijnë elementin */
+  height: 260px; /* Siguron që imazhet të mos shtrijnë elementin */
 }
 
 body {
@@ -106,17 +106,20 @@ body {
 /* src/index.css */
 .details-button {
   display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  background-color: #303030; /* Ngjyrë blu */
-  color: #fff;
+  margin: 20px;
+  padding: 20px 15px;
+  background-color: #ffffff;
+  font-size: 35px;
+  width: 50%;
+  color: #000000;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 50px;
   transition: background-color 0.3s ease;
 }
 
 .details-button:hover {
-  background-color: #28a745; /* Ngjyrë blu më e errët kur kaloni mbi butonin */
+  background-color: #ff5858;
+/* Ngjyrë blu më e errët kur kaloni mbi butonin */
 }
 
 

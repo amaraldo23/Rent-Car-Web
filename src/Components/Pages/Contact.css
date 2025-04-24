@@ -14,10 +14,6 @@
 .contact-title {
     font-size: 100px;
     font-weight: 700;
-    background: linear-gradient(90deg, #ffffff, #cccccc);
-    -webkit-background-clip: text;
-    color: transparent;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .contact-info {
@@ -61,7 +57,7 @@
 .card-icon {
     width: 100px;
     height: 100px;
-    background: linear-gradient(135deg, #4a6bff, #6a11cb);
+    background: linear-gradient(135deg, #ff5858, #f99c9c);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -101,7 +97,7 @@
 }
 
 .card-content a:hover {
-    color: #4a6bff;
+    color: #ff5858;
     background: rgba(255, 255, 255, 0.1);
 }
 

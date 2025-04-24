@@ -80,17 +80,17 @@
 
 .rent-button {
     padding: 10px 20px;
-    background-color: #28a745; /* Ngjyrë jeshile */
-    color: #fff;
-    margin-block: 15px;
+    background-color: #ffffff; /* Ngjyrë jeshile */
+    color: #000000;
+    margin-block: 30px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   .rent-button:hover {
-    background-color: #218838; /* Ngjyrë jeshile më e errët */
+    background-color: #ff5858; /* Ngjyrë jeshile më e errët */
 }
 
 .back-button {
@@ -101,13 +101,19 @@
 
 .buttons {
     padding: 10px 20px;
-    background-color: #28a745; /* Ngjyrë jeshile */
-    color: #fff;
-    margin-block: 15px;
+    background-color: #ffffff; /* Ngjyrë jeshile */
+    color: #000000;
+    margin-block: 60px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
+.buttons:hover {
+    background-color: #ff5858; /* Ngjyrë blu më e errët kur kaloni mbi butonin */
+  }
+
 
 .car-footer {
     text-align: center;

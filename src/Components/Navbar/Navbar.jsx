@@ -5,11 +5,12 @@ function Navbar({ onAboutClick, onContactClick }) {
     return (
         <nav>
             <ul className='menu'>
-                <li className='Home'><a href="/">Home</a></li>
-                <li className='About'>
+                <li>
+                    <a href="/">Home</a></li>
+                <li>
                     <a href='/about'> About </a>
                 </li>
-                <li className='Contact'>
+                <li>
                     <a href='/contact'>Contact</a>
                 </li>
             </ul>

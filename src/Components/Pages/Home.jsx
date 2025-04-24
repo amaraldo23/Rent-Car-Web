@@ -6,7 +6,6 @@ import car1 from "../../assets/car1.png";
 import car2 from "../../assets/car2.png";
 import car3 from "../../assets/car3.png";
 import car4 from "../../assets/car4.png";
-
 import category1 from "../../assets/veture.png";
 import category2 from "../../assets/fuoristrade.png";
 import category3 from "../../assets/sportive.png";
