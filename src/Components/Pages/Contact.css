@@ -18,16 +18,22 @@
 
 .contact-info {
     color: #dddddd;
-    margin-left: 60px;
+    margin-left: 280px;
     padding: 50px;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     width: 33%;
+    transition: transform 0.3s ease;
     float: inline-start;
 }
 
+
+.contact-info:hover {
+    transform: translateY(-10px);
+    background-color: #ff58583d;
+}
 /* Kartat e kontaktit */
 .contact-cards {
     display: flex;

@@ -78,7 +78,7 @@ const Home = () => {
 
   return (
     <div className="home-title">
-      <h2>Top 4 most rented Cars</h2>
+      <h2>4 Modelete me te preferuara</h2>
       <CarList cars={cars} />
 
       <h2 style={{ marginTop: '40px' }}>Kategoritë e Makinave</h2>

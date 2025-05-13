@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import Background from "./Components/Background/Background";
 import Navbar from "./Components/Navbar/Navbar";
 import About from './Components/Pages/About';
@@ -7,6 +7,10 @@ import Contact from './Components/Pages/Contact';
 import Hero from "./Components/Hero/Hero";
 import Home from "./Components/Pages/Home";
 import CarDetails from "./Components/Pages/CarDetails";
+import ElectricCars from './Components/CarCategory/ElectricCars'; 
+import SUVCars from './Components/CarCategory/SUVCars';
+import SportsCars from './Components/CarCategory/SportsCars';
+import FamilyCars from './Components/CarCategory/FamilyCars';
 
 const App = () => {
     let heroData = [
@@ -50,6 +54,10 @@ const App = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/car/:id" element={<CarDetails />} />
+                <Route path="/electric" element={<ElectricCars />} />
+                <Route path="/suv" element={<SUVCars />} />
+                <Route path="/sports" element={<SportsCars />} />
+                <Route path="/family" element={<FamilyCars />} />
             </Routes>
         </div>
     );

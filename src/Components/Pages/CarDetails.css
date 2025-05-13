@@ -41,12 +41,17 @@
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 15px; /* Hapësira brenda kutisë */
     margin: 10px 0; /* Hapësira jashtë kutisë */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hije për efekt vizual */
     width: 100%; /* Gjerësia e kutisë */
+    transition: transform 0.3s ease;
 }
 
+
+.detail-item:hover {
+    transform: translateY(-10px);
+    background-color: #ff58583d;
+}
 
 .features-list li {
     text-align: center;
@@ -63,7 +68,7 @@
 }
 
 .reservation-section > div {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 

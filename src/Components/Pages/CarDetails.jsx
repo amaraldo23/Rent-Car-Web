@@ -91,8 +91,11 @@ const CarDetails = () => {
         <div className="car-details-section">
           <h2>Detajet e Makinës</h2>
               <div className="detail-item">
-                <p>Kilometrat:150 mije te kontralluara</p>
-                <p>Lëndë djegëse: Nafte </p>
+                <p>Ngjyra:E bardhë</p>
+                    <p>Viti i Prodhimit:Viti 2010</p>
+                    <p>Forca e Motorrit:105 HP (77 KW)</p>
+                    <p> Kilometrat:150,000km(të kontrolluara)</p>
+                    <p>Lëndë djegëse:Naftë(diesel)</p>
               </div>
         </div>
 

@@ -1,0 +1,56 @@
+/* src/Components/CarCategory/ElectricCars.css */
+
+.electric-page {
+  padding: 40px 20px;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+}
+
+.electric-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.electric-cars-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.electric-car-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.electric-car-card:hover {
+  transform: translateY(-5px);
+}
+
+.electric-car-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.rent-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #00c37e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.rent-button:hover {
+  background-color: #00a96c;
+}
