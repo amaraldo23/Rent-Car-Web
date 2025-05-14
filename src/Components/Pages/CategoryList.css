@@ -13,8 +13,14 @@
     text-align: center;
     color: white;
     flex-wrap: wrap;
+    transition: transform 0.3s ease;
   }
   
+
+  .category-card:hover {
+    transform: translateY(-10px);
+    background-color: #0000006f;
+}
   .category-image {
     max-width: 100%;
     height: auto;
