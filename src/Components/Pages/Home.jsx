@@ -40,7 +40,7 @@ const Home = () => {
     },
     {
       id: 4,
-      model: 'Audi A7 Rrugaci',
+      model: 'Audi A7',
       image: car4,
       mileage: '280,000',
       fuelType: 'Benzin-Gaz',

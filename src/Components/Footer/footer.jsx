@@ -1,6 +1,8 @@
 import { DialogContent } from "@mui/material";
 import './footer.css'; 
-import apple from '../../assets/Appleicone.png';
+import Apple from '../../assets/appleicone.png';
+import Androit from '../../assets/androiticone.png';
+import { Android } from "@mui/icons-material";
 
 const Footer = () => {
     return(
@@ -13,10 +15,10 @@ const Footer = () => {
                             <a className="button-table" href='/about'> About </a>      
                             </li>
                             <li>
-                            <a className="button-table" href='/about'> Bloge </a>    
+                            <a className="button-table" href='/categoryList'> CategoryList </a>    
                             </li>
                             <li>
-                            <a className="button-table" href='/'>Top4Cars </a>    
+                            <a className="button-table" href='/'> Top4Cars </a>    
                             </li>
                         </ul>
                     </div>
@@ -39,8 +41,9 @@ const Footer = () => {
                     </div>
                     <div className="triple-tabel">
                         <h6> More</h6>
-                        <img className='appleicone' src={apple}/>
-                    </div>
+                        <img className='appleicone' src={Apple}/>
+                        <img className='androiticone' src={Androit}/>
+                    </div> 
             </div>
         </div>
     )
